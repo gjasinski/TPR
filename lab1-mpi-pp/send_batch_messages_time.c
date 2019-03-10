@@ -100,9 +100,10 @@ int main(int argc, char** argv) {
   MPI_Init(NULL, NULL);
   int world_rank;
   MPI_Comm* sharedcomm = (MPI_Comm*) calloc(1, sizeof(MPI_Comm));
-  MPI_Info info =0;// calloc(1, sizeof(MPI_Info));
+  MPI_Info info =0;
+  //MPI_Comm_split_type(MPI_COMM_WORLD, MPI_UNDEFINED, 0, info, sharedcomm);
   MPI_Comm_split_type(MPI_COMM_WORLD, MPI_COMM_TYPE_SHARED, 0, info, sharedcomm);
-//  MPI_Comm *comm = MPI_COMM_WORLD;
+fprintf(stderr, "%d aaa\n", MPI_COMM_TYPE_SHARED);
   MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
   int world_size;
   MPI_Comm_size(MPI_COMM_WORLD, &world_size);
