@@ -1,0 +1,39 @@
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/java7/oracle/1.7.0_51 loaded.
+ plgrid/tools/openmpi/1.10.2-gnu-4.9.2-ib loaded.
+World size: 1, iterations: 1000000, scaled: 0, Result PI: 3.141284. Time: 0.067121
+World size: 1, iterations: 100000000, scaled: 0, Result PI: 3.141699. Time: 5.772799
+World size: 1, iterations: 1000000000, scaled: 0, Result PI: 3.141569. Time: 57.757726
+World size: 2, iterations: 1000000, scaled: 0, Result PI: 3.142504. Time: 0.036658
+World size: 2, iterations: 100000000, scaled: 0, Result PI: 3.141544. Time: 3.137816
+World size: 2, iterations: 1000000000, scaled: 0, Result PI: 3.141586. Time: 30.269346
+World size: 3, iterations: 999999, scaled: 0, Result PI: 3.144547. Time: 0.024704
+World size: 3, iterations: 99999999, scaled: 0, Result PI: 3.141458. Time: 2.019104
+World size: 3, iterations: 999999999, scaled: 0, Result PI: 3.141625. Time: 20.135385
+World size: 4, iterations: 1000000, scaled: 0, Result PI: 3.140620. Time: 0.018303
+World size: 4, iterations: 100000000, scaled: 0, Result PI: 3.141890. Time: 1.705189
+World size: 4, iterations: 1000000000, scaled: 0, Result PI: 3.141592. Time: 15.897011
+World size: 5, iterations: 1000000, scaled: 0, Result PI: 3.143136. Time: 0.013972
+World size: 5, iterations: 100000000, scaled: 0, Result PI: 3.141308. Time: 1.533254
+World size: 5, iterations: 1000000000, scaled: 0, Result PI: 3.141501. Time: 13.640143
+World size: 6, iterations: 999996, scaled: 0, Result PI: 3.144061. Time: 0.013185
+World size: 6, iterations: 99999996, scaled: 0, Result PI: 3.141623. Time: 1.163047
+World size: 6, iterations: 999999996, scaled: 0, Result PI: 3.141632. Time: 11.395918
+World size: 7, iterations: 999999, scaled: 0, Result PI: 3.142591. Time: 0.010820
+World size: 7, iterations: 99999998, scaled: 0, Result PI: 3.141398. Time: 0.996811
+World size: 7, iterations: 999999994, scaled: 0, Result PI: 3.141671. Time: 9.927511
+World size: 8, iterations: 1000000, scaled: 0, Result PI: 3.142268. Time: 0.009686
+World size: 8, iterations: 100000000, scaled: 0, Result PI: 3.141691. Time: 0.908360
+World size: 8, iterations: 1000000000, scaled: 0, Result PI: 3.141609. Time: 8.035640
+World size: 9, iterations: 999999, scaled: 0, Result PI: 3.143987. Time: 0.009257
+World size: 9, iterations: 99999999, scaled: 0, Result PI: 3.141567. Time: 0.808280
+World size: 9, iterations: 999999999, scaled: 0, Result PI: 3.141650. Time: 7.776757
+World size: 10, iterations: 1000000, scaled: 0, Result PI: 3.141516. Time: 0.007909
+World size: 10, iterations: 100000000, scaled: 0, Result PI: 3.141555. Time: 0.777227
+World size: 10, iterations: 1000000000, scaled: 0, Result PI: 3.141600. Time: 8.606827
+World size: 11, iterations: 999999, scaled: 0, Result PI: 3.141207. Time: 0.007426
+World size: 11, iterations: 99999999, scaled: 0, Result PI: 3.141837. Time: 0.702925
+World size: 11, iterations: 999999990, scaled: 0, Result PI: 3.141605. Time: 7.635039
+World size: 12, iterations: 999996, scaled: 0, Result PI: 3.139361. Time: 0.011645
+World size: 12, iterations: 99999996, scaled: 0, Result PI: 3.141344. Time: 0.709509
+World size: 12, iterations: 999999996, scaled: 0, Result PI: 3.141545. Time: 6.613941

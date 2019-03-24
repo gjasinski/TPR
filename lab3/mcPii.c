@@ -12,7 +12,6 @@ long calcMonteCarlo(int points){
         	if(x*x + y*y <= 1.0){
 	            hit++;
                 }
-                all++;
         }
         return hit;
 }
@@ -38,24 +37,28 @@ int main(int argc, char* argv[])
     else {
         iterations = atol(argv[1]);
     }
-    time_t time;
-    int seed = time(&time) - world_rank;
+    int root = 0;
+    time_t curr_time;
+    int seed = time(&curr_time) - world_rank;
     srand(seed);
     double t1, t2;
     MPI_Barrier(MPI_COMM_WORLD);  
     if(world_rank == 0){
-       t1 = MPI_Wtime()
+       t1 = MPI_Wtime();
+       long recv = 0;
        long calculatedPoints = calcMonteCarlo(iterations);
        MPI_Reduce(&calculatedPoints, &recv, 1,  MPI_LONG, MPI_SUM, root, MPI_COMM_WORLD);
-       double pi = recv / (iterations * world_size);
+//       fprintf(stderr, "ala %ld", recv);
+       double pi = (double)(recv * 4) / (double)(iterations * world_size);
        t2 = MPI_Wtime();
-       fprintf(stderr, "Result PI: %f. Time: %f", pi, t2 - t1);
+       fprintf(stderr, "World size: %d, iterations: %d, scaled: %d, Result PI: %f. Time: %f\n", world_size, iterations * world_size, scal, pi, t2 - t1);
     }
     else {  
        long calculatedPoints = calcMonteCarlo(iterations);
        MPI_Reduce(&calculatedPoints, NULL, 1,  MPI_LONG, MPI_SUM, root, MPI_COMM_WORLD);
 
-    }   
+    }  
+    MPI_Finalize(); 
     return 0;
 }   
 
