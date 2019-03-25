@@ -1,3 +1,6 @@
+ plgrid/tools/gcc/4.9.2 loaded.
+ plgrid/tools/java7/oracle/1.7.0_51 loaded.
+ plgrid/tools/openmpi/1.10.2-gnu-4.9.2-ib loaded.
 World size: 1, iterations: 1000000, scaled: 0, Result PI: 3.144288. Time: 0.064874
 World size: 1, iterations: 100000000, scaled: 0, Result PI: 3.141453. Time: 6.743980
 World size: 1, iterations: 1000000000, scaled: 0, Result PI: 3.141579. Time: 67.644634
@@ -33,4 +36,4 @@ World size: 11, iterations: 99999999, scaled: 0, Result PI: 3.141584. Time: 0.70
 World size: 11, iterations: 999999990, scaled: 0, Result PI: 3.141645. Time: 6.180127
 World size: 12, iterations: 999996, scaled: 0, Result PI: 3.138325. Time: 0.014109
 World size: 12, iterations: 99999996, scaled: 0, Result PI: 3.141556. Time: 0.602166
-World size: 12, iterations: 999999996, scaled: 0, Result PI: 3.141620. Time: 5.97064
+World size: 12, iterations: 999999996, scaled: 0, Result PI: 3.141620. Time: 5.970644

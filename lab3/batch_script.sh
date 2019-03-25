@@ -2,9 +2,9 @@
 ## Nazwa zlecenia
 #SBATCH -J MPI_TPR_lab3
 ## Liczba alokowanych węzłów
-#SBATCH -N 1
+#SBATCH -N 12
 ## Liczba zadań per węzeł (domyślnie jest to liczba alokowanych rdzeni na węźle)
-#SBATCH --ntasks-per-node=12
+#SBATCH --ntasks-per-node=1
 ## Ilość pamięci przypadającej na jeden rdzeń obliczeniowy (domyślnie 4GB na rdzeń)
 #SBATCH --mem-per-cpu=1GB
 ## Maksymalny czas trwania zlecenia (format HH:MM:SS)

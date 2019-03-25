@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 mpicc -std=gnu99 -o mcPii mcPii.c -lm
-is_scaled=1
+is_scaled=0
 size=100000
 
 #while [ $is_scaled -le 2 ]
